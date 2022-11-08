@@ -1,0 +1,183 @@
+* {
+
+    margin: 0px;
+    padding: 0px;
+    user-select: none;
+}
+
+
+
+.Pinterest {
+
+    width: 100%;
+    height: 100vh;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navbar Css */
+
+.Pinterest_Navbar {
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: white;
+    box-sizing: border-box;
+    padding: 1% 1%;   
+    /* position: fixed; */
+}
+
+
+.Pinterest_NavContent1, .Pinterest_NavContent2, .Pinterest_NavContent3 {
+
+    display: flex;
+    flex-direction: row;
+}
+
+
+.Pinterest_NavContent1 {
+
+    width: 20%;
+    display: flex;
+    align-items: center;
+}
+
+.Pinterest_Logo {
+
+    width: 14%;
+    
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    box-sizing: border-box;
+    padding: 3% 2%;
+
+    border-radius: 500px;
+}
+
+.Pinterest_Logo:hover {
+
+    background-color: #F3F4F6;
+}
+
+.Pinterest_Home, .Pinterest_Today, .Pinterest_DropDown1 {
+
+    width: 28%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    box-sizing: border-box;
+    padding: 2.6% 35px;
+
+    border-radius: 500px;
+
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.Pinterest_Home:hover, .Pinterest_Today:hover, .Pinterest_DropDown1:hover {
+
+    color: white;
+    background-color: #1F2937;
+}
+
+
+.Pinterest_NavContent2 {
+
+    width: 75%;
+}
+
+.Pinterest_NavSearch {
+
+    width: 100%;
+    height: 50px;
+
+    background-image: url("./search.svg");
+    background: #E5E7EB;
+    border-radius: 30px;
+
+    box-sizing: border-box;
+    padding: 0% 2%;
+    border: none;
+    outline: none;
+}
+
+.Pinterest_NavContent3 {
+
+    width: 15%;
+}
+
+
+.Pinterest_Bell, .Pinterest_Comment, .Pinterest_Account, .Pinterest_DropDown2 {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    width: 22%;
+    padding: 3% 0%;
+}
+
+.Pinterest_AccName {
+
+    width: 60%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-self: center;
+
+    box-sizing: border-box;
+    padding: 5% 0%;
+    border-radius: 20px;
+    background-color: #7C3AED;
+    color: white;
+}
+
+.Pinterest_Bell:hover, .Pinterest_Comment:hover, .Pinterest_DropDown2:hover, .Pinterest_Account:hover {
+
+    background-color: #F3F4F6;
+}
+
+/* Image Grid UI */
+
+.Pinterest_ScrollBlock {
+
+    width: 100%;
+    height: 90vh;
+
+    overflow: scroll;
+}
+
+.Pinterest_ImageBody {
+    
+    column-count: 6; 
+    column-gap: 10px;
+
+    box-sizing: border-box;
+    padding: 0% 2%;
+    gap: 1%;
+
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.imgDiv { 
+
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.imgDiv > img {
+   
+    border-radius: 20px;
+}
+
